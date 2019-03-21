@@ -1,0 +1,42 @@
+body {
+    font-size: 20px;
+}
+
+.profit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e9fff4;
+}
+
+.profit-form input, textarea, .error {
+    width: 250px;
+    padding: 5px;
+    font-size: 20PX;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.profit-form button {
+    width: 263px;
+    text-align: center;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.error {
+    color: white;
+    background: #ff6f77;
+    display: none;
+}
+
+.error-container {
+    display: block;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="profit">
+    <meta name="keywords" content="profit">
+    <title>Profit</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<div class="profit-form">
+    <form action="javascript: void(0)">
+        <div class="profit-date">
+            <div>
+                <label for="date">Choose Date</label>
+            </div>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="profit-amount">
+            <div>
+                <label for="amount">Amount (USD)</label>
+            </div>
+            <input type="number" min="0" name="amount" step="1" id="amount" required>
+        </div>
+        <div class="profit-calculate" name="calculate">
+            <button type="submit">Recalculate</button>
+        </div>
+    </form>
+    <div class="error"></div>
+    <div class="profit-result">
+        <div>
+            <label for="result">Profit (RUB)</label>
+        </div>
+        <textarea id="result" cols="30" rows="2" style="resize: none;" readonly="true"></textarea>
+    </div>
+</div>
+
+<script src="/js/index.js"></script>
+</body>
